@@ -8,7 +8,7 @@ In this project, we show the data engineering pipeline, from data ingestion usin
 - [Objectives](#fobectives)
 - [Setup](#setup)
 - [Usage](#usage)
-- [Contributing](#contributing)
+- [Visualization](#visualization)
 
 ## Background
 Financial fraud is a prevalent issue in the financial industry, causing significant losses for both financial institutions and consumers. Traditional rule-based systems often fail to detect sophisticated fraud patterns, leading to increased risks and liabilities. To address this challenge, this project employs advanced data engineering techniques to build a robust fraud detection system capable of identifying fraudulent activities in real-time.
@@ -38,12 +38,8 @@ To use the project, follow these guidelines:
 - Monitor the system dashboard for real-time insights and alerts on suspicious activities.
 - Investigate flagged transactions and take appropriate actions to mitigate risks and prevent fraud.
 
-## Contributing
-Contributions to the project are welcome! If you'd like to contribute, please follow these steps:
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix: `git checkout -b feature-name`.
-3. Make your changes and commit them with descriptive messages: `git commit -m "Add new feature"`.
-4. Push your changes to your fork: `git push origin feature-name`.
-5. Submit a pull request to the main repository.
+## Visualization
+- Final visualization can be [here](https://lookerstudio.google.com/reporting/5da912e1-8240-4d4c-a25c-d5f0b7454233)
+
 
 
