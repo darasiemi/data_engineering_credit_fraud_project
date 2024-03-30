@@ -17,12 +17,7 @@ To address these challenges, there is a critical need for an advanced financial 
 
 The aim of this project is to develop a comprehensive data engineering pipeline tailored to the specific needs of ingesting data into a cloud storage solution, orchestrating data workflows using an orchestrator (Mage), and subsequently loading the processed data into a data warehouse. By establishing an efficient and scalable data engineering pipeline, organizations can streamline the data ingestion process, enhance data accessibility, and lay the foundation for downstream analytics and machine learning initiatives.
 
-Given the project's emphasis on data engineering, there is no inclusion of a machine learning process. Nonetheless, the data derived from the table undergoes visualization. From the generated table, the following questions are asked:
-- How many records are in the data i.e all transactions?
-- How many records are fraud transactions?
-- What is the percentage by type of all transactions?
-- What type of transactions recorded the highest fraud instances?
-- Given the extracted data, what month recorded the highest frauds?
+Given the project's emphasis on data engineering, there is no inclusion of a machine learning process. Nonetheless, the data derived from the table undergoes visualization. 
 
 
 ## Objectives
@@ -58,7 +53,13 @@ To use the project, follow these guidelines:
 - Investigate flagged transactions and take appropriate actions to mitigate risks and prevent fraud.
 
 ## Visualization
-- Final visualization can be [here](https://lookerstudio.google.com/reporting/5da912e1-8240-4d4c-a25c-d5f0b7454233)
+From the generated table, a visualization of the table is made. I sought to answer the following questions:
+- How many records are in the data i.e all transactions?
+- How many records are fraud transactions?
+- What is the percentage by type of all transactions?
+- What type of transactions recorded the highest fraud instances?
+- Given the new extracted data, what month recorded the highest frauds?
+Final visualization can be [here](https://lookerstudio.google.com/reporting/5da912e1-8240-4d4c-a25c-d5f0b7454233)
 
 
 
