@@ -10,6 +10,7 @@ In this project, we show the data engineering pipeline, from data ingestion usin
 - [Infrastructure Provisioning](#infrastructure-provisioning)
 - [ETL Ingestion](#etl-ingestion)
 - [Batch Processing](#batch-processing)
+- [Visualization](#visualization)
 
 
 First step is to clone the directory
@@ -71,6 +72,8 @@ The following transformations are done in Spark:
 - Repartition the data
 - Sort the data in each partition by the `tranc_timestamp`
 - Generate a table which is written to bigquery
+
+A Dataproc cluster is created in the same region as the GCS data and the bigquery table. A temporary bucket is created when the cluster is launched. This bucket should be updated in the `spark_gcs_bigquery.py` code. The service account should also have access to storage administration and dataprocs. 
 
 For steps on how to move the driver code to GCS, and submit the Dataproc Spark job, see [here](cloud.md)
 
