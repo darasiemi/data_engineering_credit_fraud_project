@@ -7,8 +7,8 @@ In this project, we show the data engineering pipeline, from data ingestion usin
 3. Download the dataset [here](https://www.kaggle.com/datasets/ealaxi/paysim1/data). This can be downloaded locally or by API. For this project, the former was explored for this project.
    
 ## Table of Contents
-- [Infrasctuture Provisioning](#terraform)
-- [Streamlined Data Ingestion](#ingestion)
+- [Infrasctuture Provisioning](#infrastructure)
+- [Ingestion](#ingestion)
 - [Automated Data Orchestration](#orchestration)
 - [Data Warehousing and Visualization](#orchestration)
 
@@ -47,6 +47,11 @@ To setup mage, you can clone the mage-ai directory
 ```bash
 git clone  https://github.com/mage-ai/mage-zoomcamp
 ```
-Then go to the mage-zoomcamp folder `cd mage-zoomcamp`. Then run `cp dev.env .env`. Thereafter, run `docker compose build` to build the docker image that sets up docker container. Run `docker pull mageai/mageai:latest` to pull the latest mage image. Thereafter, run `docker compose up` to start the container. Mage is deployed in `localhost:6789`
+Then go to the mage-zoomcamp folder `cd mage-zoomcamp`. 
+Then run `cp dev.env .env`. 
+Thereafter, run `docker compose build` to build the docker image that sets up docker container. 
+Run `docker pull mageai/mageai:latest` to pull the latest mage image. 
+Thereafter, run `docker compose up` to start the container. 
+Mage is deployed on `localhost:6789`
 
-You can then create a project on Mage and the code in `mage_etl/load_credit_fraud_gcs.py` can be copied to a data exporter. 
+You can then create a project on Mage and the code in `mage_etl/load_credit_fraud_gcs.py` can be copied to a data exporter. Since mage is configured to `/home/src`, we will download our dataset to this directory. In addition, the credentials that allows us to write to GCS, will also be under the directory `/home/src/keys/`
