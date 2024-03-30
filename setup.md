@@ -54,4 +54,6 @@ Run `docker pull mageai/mageai:latest` to pull the latest mage image.
 Thereafter, run `docker compose up` to start the container. 
 Mage is deployed on `localhost:6789`
 
-You can then create a project on Mage and the code in `mage_etl/load_credit_fraud_gcs.py` can be copied to a data exporter. The ETL process is setup to be done in just a single block of this data expoter. Since mage is configured to `/home/src`, we will download our dataset to this directory. In addition, the credential that allows us to write to GCS, will also be under the directory `/home/src/keys/`. The credentials can also be configured in the `io_.yaml` file.
+You can then create a project on Mage and the code in `mage_etl/load_credit_fraud_gcs.py` can be copied to a data exporter python script. The ETL process is setup to be done in just a single block of this data expoter. Since mage is configured to `/home/src`, we will download our dataset to this directory (locally or by Kaggle API call). In addition, the credential that allows us to write to GCS, will also be under the directory `/home/src/keys/`. The credentials can also be configured in the `io_config.yaml` file.
+
+
