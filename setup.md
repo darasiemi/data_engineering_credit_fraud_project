@@ -57,11 +57,21 @@ Mage is deployed on `localhost:6789`
 You can then create a project on Mage and the code in `mage_etl/load_credit_fraud_gcs.py` can be copied to a data exporter python script. The ETL process is setup to be done in just a single block of this data expoter. Since mage is configured to `/home/src`, we will download our dataset to this directory (locally or by Kaggle API call). In addition, the credential that allows us to write to GCS, will also be under the directory `/home/src/keys/`. The credentials can also be configured in the `io_config.yaml` file.
 
 Some processing done during the ETL ingestion on Mage are:
-- Data read in chunks of 100000.
-- Generating a `date` column which is in date range format to replace the `step` column. The frequency was per minute. The final `date` column is in string time format for further transformation in Spark. 
-- Change columns from camelCase to snake_case naming
+- Data is read in batches of 100,000 records.
+- A new `date` column is created in a date range format to substitute the existing `step` column. The frequency was measured per minute. The resulting `date` column is formatted as a string timestamp for subsequent transformations in Spark.
+- Convert column names from camelCase to snake_case.
 
 #### Batch Processing
 The data for this project is loaded by batch processing. Spark is used for transformations.
+The following transformations are done in Spark:
+- Rename the `date` column to `tranc_date`
+- Extract the month from the string time type, and create a new column `month`
+- Convert the string time type to timestamp and name this as `tranc_timestamp`
+- Drop the `date` column
+- Repartition the data
+- Sort the data in each partition by the `tranc_timestamp`
+- Generate a table which is written to bigquery
+
+For steps on how to move the driver code to GCS, and submit the Dataproc Spark job, see [here](cloud.md)
 
 
