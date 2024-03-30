@@ -1,4 +1,10 @@
 
+```bash
+# Your terminal commands here
+$ ls -l
+$ cd my_directory
+$ git status
+
 `gsutil cp spark_bigquery.py gs://dara-project-bucket/code/`
 
 `gcloud dataproc jobs submit pyspark \
