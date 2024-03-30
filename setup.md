@@ -77,4 +77,7 @@ A Dataproc cluster is created in the same region as the GCS data and the bigquer
 
 For steps on how to move the driver code to GCS, and submit the Dataproc Spark job, see [here](cloud.md)
 
+#### Visualization
+Looker Studio is used for the visualization. A blank report is created and the table in BigQuery is used to create the visualization. Some style adjustments were made and some filters applied. The visualization can be found [here](https://lookerstudio.google.com/reporting/5da912e1-8240-4d4c-a25c-d5f0b7454233)
+
 
