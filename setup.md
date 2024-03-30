@@ -13,7 +13,7 @@ In this project, we show the data engineering pipeline, from data ingestion usin
 
 First step is to clone the directory
  ```bash
-  git clone 
+  git clone https://github.com/peter716/data_engineering_credit_fraud_project.git
 ```
 
 #### Infrasctuture Provisioning
