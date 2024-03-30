@@ -7,10 +7,10 @@ In this project, we show the data engineering pipeline, from data ingestion usin
 3. Download the dataset [here](https://www.kaggle.com/datasets/ealaxi/paysim1/data). This can be downloaded locally or by API. For this project, the former was explored for this project.
    
 ## Table of Contents
-- [Infrasctuture Provisioning](#infrastructure)
-- [Ingestion](#ingestion)
-- [Automated Data Orchestration](#orchestration)
-- [Data Warehousing and Visualization](#datawarehousingandvisualization)
+- [Infrastructure Provisioning](#infrastructure-provisioning)
+- [ETL Ingestion](#etl-ingestion)
+- [Batch Processing](#batch-processing)
+
 
 First step is to clone the directory
  ```bash
