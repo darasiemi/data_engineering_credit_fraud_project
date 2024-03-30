@@ -41,3 +41,12 @@ Thereafter, the following commands are run:
     * Asks for approval to the proposed plan, and applies changes to cloud
 5. `terraform destroy`
     * Removes your stack from the Cloud
+
+#### Streamlined Data Ingestion
+To setup mage, you can clone the mage-ai directory 
+```bash
+git clone  https://github.com/mage-ai/mage-zoomcamp
+```
+Then go to the mage-zoomcamp folder `cd mage-zoomcamp`. Then run `cp dev.env .env`. Thereafter, run `docker compose build` to build the docker image that sets up docker container. Run `docker pull mageai/mageai:latest` to pull the latest mage image. Thereafter, run `docker compose up` to start the container. Mage is deployed in `localhost:6789`
+
+You can then create a project on Mage and the code in `mage_etl/load_credit_fraud_gcs.py` can be copied to a data exporter. 
