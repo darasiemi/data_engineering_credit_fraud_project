@@ -1,4 +1,4 @@
-
+```bash
 $ gsutil cp spark_bigquery.py gs://dara-project-bucket/code/
 
 $ gcloud dataproc jobs submit pyspark \
