@@ -5,6 +5,7 @@ In this project, we show the data engineering pipeline, from data ingestion usin
 
 ## Table of Contents
 - [Background](#background)
+- [Dataset](#dataset)
 - [Objectives](#obectives)
 - [Visualization](#visualization)
 - [Setup](#setup)
@@ -18,6 +19,8 @@ The aim of this project is to develop a comprehensive data engineering pipeline 
 
 Given the project's emphasis on data engineering, there is no inclusion of a machine learning process. Nonetheless, the data derived from the table undergoes visualization. 
 
+## Dataset
+The dataset is the synthetic financial dataset for fraud detection available [here](https://www.kaggle.com/datasets/ealaxi/paysim1/data)
 
 ## Objectives
 
