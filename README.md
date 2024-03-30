@@ -1,7 +1,7 @@
 # Financial Fraud Analysis using Synthetic data 
 
 ## Overview
-In this project, we show the data engineering pipeline, from data ingestion using . This project is a capstone for the fulfilment of the data engineering zoomcamp[link].
+In this project, we show the data engineering pipeline, from data ingestion using . This project is a capstone for the fulfilment of the data engineering zoomcamp[data engineering zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp.git).
 
 ## Table of Contents
 - [Background](#background)
@@ -9,6 +9,7 @@ In this project, we show the data engineering pipeline, from data ingestion usin
 - [Objectives](#obectives)
 - [Visualization](#visualization)
 - [Setup](#setup)
+- [Acknowledgment](#acknowledgment)
 
 ## Background
 In the rapidly evolving landscape of financial transactions, the rise of sophisticated fraudulent activities poses a significant threat to the integrity and stability of financial institutions. Despite the implementation of traditional fraud detection methods, such as rule-based systems and manual audits, the detection and prevention of fraudulent activities remain challenging. Financial institutions face substantial financial losses, reputational damage, and regulatory penalties due to undetected fraudulent transactions.
@@ -50,6 +51,15 @@ Final visualization can be found [here](https://lookerstudio.google.com/reportin
 
 ## Setup
 To replicate this project, [go to](setup.md)
+
+## Acknowledgment
+I extend my heartfelt appreciation to Data Talks Club for organizing this Data Engineering Zoomcamp. The dedication and effort put into curating the comprehensive curriculum, engaging sessions, and valuable resources have truly enriched my learning experience.
+
+The Data Engineering Zoomcamp provided me with a platform to delve deep into the intricacies of data engineering, explore cutting-edge technologies, and gain practical skills that are invaluable in today's data-driven world.
+
+I express my sincere gratitude to the entire team at Data Talks Club for their commitment to fostering learning and growth within the data community. Your passion for sharing knowledge and fostering collaboration is commendable and has inspired me to continue my journey in the field of data engineering with enthusiasm and dedication, and also gain invaluable skills for my research.
+
+My appreciation also goes to all the participants of the 2024 cohorts. Thank you for your unwavering support, guidance, and encouragement throughout the Data Engineering Zoomcamp. I look forward to continued collaboration and learning opportunities with Data Talks Club in the future.
 
 
 
