@@ -42,7 +42,7 @@ Thereafter, the following commands are run:
 5. `terraform destroy`
     * Removes your stack from the Cloud
 
-#### Streamlined Data Ingestion
+#### Ingestion
 To setup mage, you can clone the mage-ai directory 
 ```bash
 git clone  https://github.com/mage-ai/mage-zoomcamp
