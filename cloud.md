@@ -2,7 +2,7 @@
 #To copy files from local file to gcs
 $ gsutil cp sparl_gcs_to_bigquery/spark_bigquery.py gs://dara-project-bucket/code/
 
-To submit dataproc jobs to run spark on cloud
+#To submit dataproc jobs to run spark on cloud
 $ gcloud dataproc jobs submit pyspark \
      --cluster=project-cluster \
      --region=europe-west4 \
@@ -14,5 +14,5 @@ $ gcloud dataproc jobs submit pyspark \
      'gs://dara-project-bucket/credit_fraud_parquet/2023/*' \
      --output=project_dataset.credit_fraud_bigquery_table
 
-
+#To enable private ip google access 
 $ gcloud compute networks subnets update default --region=europe-west4 --enable-private-ip-google-access
