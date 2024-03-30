@@ -42,7 +42,7 @@ Thereafter, the following commands are run:
 5. `terraform destroy`
     * Removes your stack from the Cloud
 
-#### Ingestion
+#### ETL Ingestion
 To setup mage, you can clone the mage-ai directory 
 ```bash
 git clone  https://github.com/mage-ai/mage-zoomcamp
@@ -56,6 +56,12 @@ Mage is deployed on `localhost:6789`
 
 You can then create a project on Mage and the code in `mage_etl/load_credit_fraud_gcs.py` can be copied to a data exporter python script. The ETL process is setup to be done in just a single block of this data expoter. Since mage is configured to `/home/src`, we will download our dataset to this directory (locally or by Kaggle API call). In addition, the credential that allows us to write to GCS, will also be under the directory `/home/src/keys/`. The credentials can also be configured in the `io_config.yaml` file.
 
-#### Data Warehousing and Visualization
+Some processing done during the ETL ingestion on Mage are:
+- Data read in chunks of 100000.
+- Generating a `date` column which is in date range format to replace the `step` column. The frequency was per minute. The final `date` column is in string time format for further transformation in Spark. 
+- Change columns from camelCase to snake_case naming
+
+#### Batch Processing
+The data for this project is loaded by batch processing. Spark is used for transformations.
 
 
