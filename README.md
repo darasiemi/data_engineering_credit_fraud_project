@@ -7,6 +7,7 @@ In this project, we show the data engineering pipeline, from data ingestion usin
 - [Background](#background)
 - [Objectives](#obectives)
 - [Visualization](#visualization)
+- [Setup](#setup)
 
 ## Background
 In the rapidly evolving landscape of financial transactions, the rise of sophisticated fraudulent activities poses a significant threat to the integrity and stability of financial institutions. Despite the implementation of traditional fraud detection methods, such as rule-based systems and manual audits, the detection and prevention of fraudulent activities remain challenging. Financial institutions face substantial financial losses, reputational damage, and regulatory penalties due to undetected fraudulent transactions.
@@ -43,7 +44,9 @@ From the generated table, a visualization of the table is made. I sought to answ
 - Given the new extracted data, what month recorded the highest frauds?
 
 Final visualization can be found [here](https://lookerstudio.google.com/reporting/5da912e1-8240-4d4c-a25c-d5f0b7454233)
-[Go to Cloud File](cloud.md)
+
+## Setup
+To replicate this project, [go to](setup.md)
 
 
 
