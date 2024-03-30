@@ -1,5 +1,5 @@
 ## Overview
-In this project, we show the data engineering pipeline, from data ingestion using . This project is a capstone for the fulfilment of the data engineering zoomcamp[link]. The dataset for this project can be found [here](https://www.kaggle.com/datasets/ealaxi/paysim1/data)
+In this project, we show the data engineering pipeline, from data ingestion using . This project is a capstone for the fulfilment of the [data engineering zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp.git). The dataset for this project can be found [here](https://www.kaggle.com/datasets/ealaxi/paysim1/data)
  
 ### Pre-Requisites
 1. Terraform client installation: https://www.terraform.io/downloads
@@ -78,6 +78,6 @@ A Dataproc cluster is created in the same region as the GCS data and the bigquer
 For steps on how to move the driver code to GCS, and submit the Dataproc Spark job, see [here](cloud.md)
 
 #### Visualization
-Looker Studio is used for the visualization. A blank report is created and the table in BigQuery is used to create the visualization. Some style adjustments were made and some filters applied. The visualization can be found [here](https://lookerstudio.google.com/reporting/5da912e1-8240-4d4c-a25c-d5f0b7454233)
+Looker Studio facilitates visualization for this project. A new report is created, utilizing the data from the BigQuery table for visualization purposes. To enhance clarity and relevance, certain style modifications and filters are applied to the visualization. You can access the finalized visualization [here](https://lookerstudio.google.com/reporting/5da912e1-8240-4d4c-a25c-d5f0b7454233)
 
 
