@@ -1,9 +1,9 @@
-```bash
 To copy files from local file to gcs
+```bash
 $ gsutil cp sparl_gcs_to_bigquery/spark_bigquery.py gs://dara-project-bucket/code/
 ```
-```bash
 To submit dataproc jobs to run spark on cloud
+```bash
 $ gcloud dataproc jobs submit pyspark \
      --cluster=project-cluster \
      --region=europe-west4 \
@@ -15,7 +15,7 @@ $ gcloud dataproc jobs submit pyspark \
      'gs://dara-project-bucket/credit_fraud_parquet/2023/*' \
      --output=project_dataset.credit_fraud_bigquery_table
 ```
-```bash
-To enable private ip google access 
+To enable private ip google access
+```bash 
 $ gcloud compute networks subnets update default --region=europe-west4 --enable-private-ip-google-access
 ```
