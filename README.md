@@ -6,8 +6,6 @@ In this project, we show the data engineering pipeline, from data ingestion usin
 ## Table of Contents
 - [Background](#background)
 - [Objectives](#obectives)
-- [Setup](#setup)
-- [Usage](#usage)
 - [Visualization](#visualization)
 
 ## Background
@@ -35,22 +33,6 @@ This project focuses on building a robust data engineering pipeline for efficien
 - **Enhanced Data Quality**: Integration of data quality checks and validation processes to uphold the integrity and reliability of data across the data engineering pipeline, ensuring accurate and consistent data outputs.
 
 - **Insightful Data Visualization**: Integration of Looker Studio to visualize and analyze data stored within the data warehouse, empowering stakeholders to derive actionable insights and facilitate data-driven decision-making processes.
-
-## Setup
-To set up the project locally, follow these steps:
-1. Clone the repository: `git clone https://github.com/your-username/credit-fraud-detection.git`
-2. Install dependencies: `pip install -r requirements.txt`
-3. Configure the environment variables required for connecting to data sources and APIs.
-4. Run the data preprocessing pipeline to prepare the dataset for modeling.
-5. Train and evaluate machine learning models using the processed dataset.
-6. Deploy the trained models to the production environment for real-time fraud detection.
-
-## Usage
-To use the project, follow these guidelines:
-- Provide input data containing transactional information in a structured format.
-- Execute the fraud detection pipeline to analyze the data and generate fraud predictions.
-- Monitor the system dashboard for real-time insights and alerts on suspicious activities.
-- Investigate flagged transactions and take appropriate actions to mitigate risks and prevent fraud.
 
 ## Visualization
 From the generated table, a visualization of the table is made. I sought to answer the following questions:
