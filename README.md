@@ -59,6 +59,7 @@ From the generated table, a visualization of the table is made. I sought to answ
 - What is the percentage by type of all transactions?
 - What type of transactions recorded the highest fraud instances?
 - Given the new extracted data, what month recorded the highest frauds?
+
 Final visualization can be [here](https://lookerstudio.google.com/reporting/5da912e1-8240-4d4c-a25c-d5f0b7454233)
 
 
