@@ -1,7 +1,8 @@
 ```bash
-To copy files from local file to gcs
+#To copy files from local file to gcs
 $ gsutil cp sparl_gcs_to_bigquery/spark_bigquery.py gs://dara-project-bucket/code/
 
+To submit dataproc jobs to run spark on cloud
 $ gcloud dataproc jobs submit pyspark \
      --cluster=project-cluster \
      --region=europe-west4 \
