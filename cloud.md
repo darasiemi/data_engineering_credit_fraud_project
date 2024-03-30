@@ -1,10 +1,6 @@
 
-```bash
-
-```bash
 $ gsutil cp spark_bigquery.py gs://dara-project-bucket/code/
 
-```bash
 $ gcloud dataproc jobs submit pyspark \
      --cluster=project-cluster \
      --region=europe-west4 \
@@ -16,5 +12,5 @@ $ gcloud dataproc jobs submit pyspark \
      'gs://dara-project-bucket/credit_fraud_parquet/2023/*' \
      --output=project_dataset.credit_fraud_bigquery_table
 
-```bash
+
 $ gcloud compute networks subnets update default --region=europe-west4 --enable-private-ip-google-access
