@@ -5,22 +5,35 @@ In this project, we show the data engineering pipeline, from data ingestion usin
 
 ## Table of Contents
 - [Background](#background)
-- [Objectives](#fobectives)
+- [Objectives](#obectives)
 - [Setup](#setup)
 - [Usage](#usage)
 - [Visualization](#visualization)
 
 ## Background
-Financial fraud is a prevalent issue in the financial industry, causing significant losses for both financial institutions and consumers. Traditional rule-based systems often fail to detect sophisticated fraud patterns, leading to increased risks and liabilities. To address this challenge, this project employs advanced data engineering techniques to build a robust fraud detection system capable of identifying fraudulent activities in real-time.
+In the rapidly evolving landscape of financial transactions, the rise of sophisticated fraudulent activities poses a significant threat to the integrity and stability of financial institutions. Despite the implementation of traditional fraud detection methods, such as rule-based systems and manual audits, the detection and prevention of fraudulent activities remain challenging. Financial institutions face substantial financial losses, reputational damage, and regulatory penalties due to undetected fraudulent transactions.
+
+To address these challenges, there is a critical need for an advanced financial fraud detection system that leverages data engineering principles and machine learning algorithms. The system should be capable of analyzing large volumes of transactional data in real-time to identify anomalous patterns indicative of fraudulent behavior. By implementing such a system, financial institutions can proactively detect and prevent fraudulent activities, safeguarding their assets and maintaining trust with customers.
+
+The aim of this project is to develop a comprehensive data engineering pipeline tailored to the specific needs of ingesting data into a cloud storage solution, orchestrating data workflows using an orchestrator (Mage), and subsequently loading the processed data into a data warehouse. By establishing an efficient and scalable data engineering pipeline, organizations can streamline the data ingestion process, enhance data accessibility, and lay the foundation for downstream analytics and machine learning initiatives.
+
+Given the project's emphasis on data engineering, there is no inclusion of a machine learning process. Nonetheless, the data derived from the table undergoes visualization.
 
 ## Objectives
-Specifically, the project aims to address the following key objectives:
 
-- Extract relevant data elements from the EIA-923 report and transform them into a structured format that is suitable for analysis and modeling.
-- Standardize the data and ensure that it is consistent, accurate, and complete.
-- Load the transformed data into a data warehouse or database that can be easily queried and analyzed.
-- Develop a user-friendly interface for accessing and querying the data, enabling users to generate reports and visualizations that can support decision-making.
-- Provide quick insight on the dataset \
+This project focuses on building a robust data engineering pipeline for efficient data ingestion, orchestration, warehousing, and visualization. Below are the key components of the project:
+
+- **Infrastructure Provisioning**: Implementation of infrastructure provisioning using Terraform to automate the deployment of cloud resources required for the data engineering pipeline.
+
+- **Streamlined Data Ingestion**: Implementation of efficient mechanisms to ingest data from diverse sources into a centralized cloud storage solution, ensuring seamless data availability and accessibility.
+
+- **Automated Data Orchestration**: Utilization of automated workflows orchestrated by Mage to schedule, monitor, and manage data ingestion tasks, thereby minimizing manual intervention and optimizing operational efficiency.
+
+- **Scalable Data Warehousing**: Configuration of a scalable and high-performance data warehouse infrastructure capable of accommodating the expanding volume and variety of data ingested from multiple sources.
+
+- **Enhanced Data Quality**: Integration of data quality checks and validation processes to uphold the integrity and reliability of data across the data engineering pipeline, ensuring accurate and consistent data outputs.
+
+- **Insightful Data Visualization**: Integration of Looker Studio to visualize and analyze data stored within the data warehouse, empowering stakeholders to derive actionable insights and facilitate data-driven decision-making processes.
 
 ## Setup
 To set up the project locally, follow these steps:
