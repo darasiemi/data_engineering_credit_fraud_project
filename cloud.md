@@ -5,9 +5,9 @@ $ ls -l
 $ cd my_directory
 $ git status
 
-`gsutil cp spark_bigquery.py gs://dara-project-bucket/code/`
+$ gsutil cp spark_bigquery.py gs://dara-project-bucket/code/
 
-`gcloud dataproc jobs submit pyspark \
+$ gcloud dataproc jobs submit pyspark \
      --cluster=project-cluster \
      --region=europe-west4 \
      gs://dara-project-bucket/code/spark_bigquery.py \
@@ -16,7 +16,7 @@ $ git status
      'gs://dara-project-bucket/credit_fraud_parquet/2021/*' \
      'gs://dara-project-bucket/credit_fraud_parquet/2022/*' \
      'gs://dara-project-bucket/credit_fraud_parquet/2023/*' \
-     --output=project_dataset.credit_fraud_bigquery_table`
+     --output=project_dataset.credit_fraud_bigquery_table
 
 
-`gcloud compute networks subnets update default --region=europe-west4 --enable-private-ip-google-access`
+$ gcloud compute networks subnets update default --region=europe-west4 --enable-private-ip-google-access
