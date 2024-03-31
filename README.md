@@ -3,7 +3,7 @@
 ## Overview
 In this project, we show the data engineering pipeline, from data ingestion using . This project is a capstone for the fulfilment of the [data engineering zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp.git).
 
-![architecture](data_engineering_architecture.png)
+![architecture](data_engineering_architecture.drawio.png)
 
 ## Table of Contents
 - [Background](#background)
