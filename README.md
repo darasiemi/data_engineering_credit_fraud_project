@@ -8,7 +8,7 @@ In this project, I demonstrate the end-to-end data engineering pipeline, showcas
 ## Table of Contents
 - [Background](#background)
 - [Dataset](#dataset)
-- [Objectives](#obectives)
+- [Objectives](#objectives)
 - [Visualization](#visualization)
 - [Setup](#setup)
 - [Acknowledgment](#acknowledgment)
