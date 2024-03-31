@@ -1,5 +1,5 @@
 ## Overview
-In this project, we show the data engineering pipeline, from data ingestion using . This project is a capstone for the fulfilment of the [data engineering zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp.git). The dataset for this project can be found [here](https://www.kaggle.com/datasets/ealaxi/paysim1/data)
+In this project, I show the data engineering pipeline, from data ingestion using . This project is a capstone for the fulfilment of the [data engineering zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp.git). The dataset for this project can be found [here](https://www.kaggle.com/datasets/ealaxi/paysim1/data). This is my first data engineering project and I am happy to pick up these tools.
  
 ### Pre-Requisites
 1. Terraform client installation: https://www.terraform.io/downloads
