@@ -41,7 +41,8 @@ Thereafter, the following commands are run:
 4. `terraform apply`: 
     * Asks for approval to the proposed plan, and applies changes to cloud
 5. `terraform destroy`
-    * Removes your stack from the Cloud
+    * Removes your stack from the Cloud. This should only be done when after the project is completed and there is no need 
+    for the resources anymore. 
 
 #### ETL Ingestion
 To setup mage, you can clone the mage-ai directory 
