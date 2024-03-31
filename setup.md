@@ -57,6 +57,7 @@ Thereafter, run `docker compose up` to start the container.
 Mage is deployed on `localhost:6789`
 
 You can then create a project on Mage and the code in `mage_etl/load_credit_fraud_gcs.py` can be copied to a data exporter python script. The ETL process is setup to be done in just a single block of this data expoter. Since mage is configured to `/home/src`, we will download our dataset to this directory (locally or by Kaggle API call). In addition, the credential that allows us to write to GCS, will also be under the directory `/home/src/keys/`. The credentials can also be configured in the `io_config.yaml` file.
+It should be noted that the read is in CSV format. To make the data more lightweight for storage, the dataset is converted to parquets before transferring to cloud storage.
 
 Some processing done during the ETL ingestion on Mage are:
 - Data is read in batches of 100,000 records.
@@ -64,19 +65,19 @@ Some processing done during the ETL ingestion on Mage are:
 - Convert column names from camelCase to snake_case.
 
 #### Batch Processing
-The data for this project is loaded by batch processing. Spark is used for transformations.
+The data for this project is loaded by batch processing. Spark is used for transformations and to create table in BigQuery.
 The following transformations are done in Spark:
 - Rename the `date` column to `tranc_date`
 - Extract the month from the string time type, and create a new column `month`
 - Convert the string time type to timestamp and name this as `tranc_timestamp`
 - Drop the `date` column
-- Repartition the data
-- Sort the data in each partition by the `tranc_timestamp`
+- Partition the data to improve efficiency, query performance, and manageability 
+- Sort the data in each partition by the `tranc_timestamp`, again to improve query performance.
 - Generate a table which is written to bigquery
 
 A Dataproc cluster is created in the same region as the GCS data and the bigquery table. A temporary bucket is created when the cluster is launched. This bucket should be updated in the `spark_bigquery.py` code. The service account should also have access to storage administration and dataprocs. 
 
-For steps on how to move the driver code to GCS, and submit the Dataproc Spark job, see [here](cloud.md)
+For steps on how to move the driver code to GCS, and submiting the Dataproc Spark job, see [here](cloud.md)
 
 #### Visualization
 Looker Studio facilitates visualization for this project. A new report is created, utilizing the data from the BigQuery table for visualization purposes. To enhance clarity and relevance, certain style modifications and filters are applied to the visualization. You can access the finalized visualization [here](https://lookerstudio.google.com/reporting/5da912e1-8240-4d4c-a25c-d5f0b7454233)
