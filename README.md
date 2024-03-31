@@ -37,8 +37,6 @@ This project focuses on building a robust data engineering pipeline for efficien
 
 - **Data Warehousing**: Transfer of data from cloud storage to table available in high-performance data warehouse infrastructure capable of accommodating the expanding volume and variety of data ingested from multiple sources.
 
-- **Enhanced Data Quality**: Integration of data quality checks and validation processes to uphold the integrity and reliability of data across the data engineering pipeline, ensuring accurate and consistent data outputs.
-
 - **Insightful Data Visualization**: Integration of Looker Studio to visualize and analyze data stored within the data warehouse, empowering stakeholders to derive actionable insights and facilitate data-driven decision-making processes.
 
 ## Visualization
