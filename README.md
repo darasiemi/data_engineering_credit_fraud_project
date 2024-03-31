@@ -1,7 +1,9 @@
 # Financial Fraud Analysis using Synthetic data 
 
 ## Overview
-In this project, we show the data engineering pipeline, from data ingestion using . This project is a capstone for the fulfilment of the data engineering zoomcamp[data engineering zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp.git).
+In this project, we show the data engineering pipeline, from data ingestion using . This project is a capstone for the fulfilment of the [data engineering zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp.git).
+
+![architecture](data_engineering_architecture.png)
 
 ## Table of Contents
 - [Background](#background)
