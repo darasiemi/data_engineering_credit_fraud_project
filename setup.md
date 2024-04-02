@@ -79,12 +79,15 @@ A Dataproc cluster is created in the same region as the GCS data and the bigquer
 
 For steps on how to move the driver code to GCS, and submiting the Dataproc Spark job, see [here](cloud.md)
 
-Note that Partitioning was done in Spark. The data was partitioned into 50 and sorted within partitions. To add an extra layer of partioning, the table written to BigQuery can also be partioned to improve performance in using the query. This query creates or replaces a table with data that is partitioned based on the month extracted from the timestamp column.  
+Note that Partitioning was done in Spark. The data was partitioned into 50 and sorted within partitions. To add an extra layer of partioning, the table written to BigQuery can also be partioned to improve performance in using the query. This query creates or replaces a table with data that is partitioned based on the month extracted from the `tranc_timestamp` column. After the table is partitioned, it is also clustered by the `type` column. Clustering further enhances the table's query performance by organizing data based on the values of the `type` columns. We will see during visualization that some specific transaction types are susceptible to fraud. Queries that filter or aggregate data based on the clustered columns can be more efficient, as BigQuery can more effectively limit the data it needs to scan.
+
 ```sql
 CREATE OR REPLACE TABLE data-engr-zoomcamp-dara.project_dataset.credit_fraud_bigquery_table_partitioned
 PARTITION BY
-  TIMESTAMP_TRUNC(tranc_timestamp, MONTH) AS
-SELECT * FROM data-engr-zoomcamp-dara.project_dataset.credit_fraud_bigquery_table;
+  TIMESTAMP_TRUNC(tranc_timestamp, MONTH) 
+CLUSTER BY type AS (
+    SELECT * FROM data-engr-zoomcamp-dara.project_dataset.credit_fraud_bigquery_table
+  );
 ```
 
 To query the table for the first 10 records which is ordered by timestamps, this query can be run
