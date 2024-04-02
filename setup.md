@@ -79,6 +79,15 @@ A Dataproc cluster is created in the same region as the GCS data and the bigquer
 
 For steps on how to move the driver code to GCS, and submiting the Dataproc Spark job, see [here](cloud.md)
 
+Note that Partitioning was done in Spark. The data was partitioned into 50. The eventual table can also be partioned in BigQuery using the query 
+```sql
+CREATE OR REPLACE TABLE data-engr-zoomcamp-dara.project_dataset.credit_fraud_bigquery_table_partitoned
+PARTITION BY
+  DATE(tranc_timestamp) AS
+SELECT * FROM data-engr-zoomcamp-dara.project_dataset.credit_fraud_bigquery_table;
+```
+However, there is a caution when partitioning by the generated timestamp for this data as this query returns a large number of partitions which exceeded the partition limits in BigQuery.
+
 #### Visualization
 Looker Studio facilitates visualization for this project. A new report is created, utilizing the data from the BigQuery table for visualization purposes. To enhance clarity and relevance, certain style modifications and filters are applied to the visualization. You can access the finalized visualization [here](https://lookerstudio.google.com/reporting/5da912e1-8240-4d4c-a25c-d5f0b7454233)
 
