@@ -64,6 +64,8 @@ Some processing done during the ETL ingestion on Mage are:
 - A new `date` column is created in a date range format to substitute the existing `step` column. The frequency was measured per minute. The resulting `date` column is formatted as a string timestamp for subsequent transformations in Spark.
 - Convert column names from camelCase to snake_case.
 
+Please note that a single data exporter block is used for ETL as this was the easiest way to run the ETL process with just a single click.
+
 #### Batch Processing
 The data for this project is loaded by batch processing. Spark is used for transformations and to create table in BigQuery.
 The following transformations are done in Spark:
