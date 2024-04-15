@@ -11,6 +11,7 @@ In this project, I demonstrate the end-to-end data engineering pipeline, showcas
 - [Objectives](#objectives)
 - [Visualization](#visualization)
 - [Setup](#setup)
+- [Future Work](#future-work)
 - [Acknowledgment](#acknowledgment)
 
 ## Background
@@ -51,6 +52,11 @@ Final visualization can be found [here](https://lookerstudio.google.com/reportin
 
 ## Setup
 To replicate this project, [go to](setup.md)
+
+## Future Work
+- Explore stream processing, whereby transactions are processed per time.
+- Implement CI/CD and quality tests, to ensure the intergrity of the data being processed.
+- Utilize the orchestrator for ingestion and transformation 
 
 ## Acknowledgment
 I extend my heartfelt appreciation to Data Talks Club for organizing this Data Engineering Zoomcamp. The dedication and effort put into curating the comprehensive curriculum, engaging sessions, and valuable resources have truly enriched my learning experience.
