@@ -49,7 +49,7 @@ From the generated table, a visualization of the table is made. I sought to answ
 - Given the new extracted data with timestamps and months, what months recorded the highest frauds?
 
 Final visualization can be found [here](https://lookerstudio.google.com/reporting/5da912e1-8240-4d4c-a25c-d5f0b7454233)
-
+UPDATE: Visualization no longer available after expiration of GCP plan.
 ## Setup
 To replicate this project, [go to](setup.md)
 
