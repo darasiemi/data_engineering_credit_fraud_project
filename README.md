@@ -3,7 +3,7 @@
 ## Overview
 In this project, I demonstrate the end-to-end data engineering pipeline, showcasing each stage from data ingestion to final analysis. The pipeline encompasses various technologies and tools to achieve seamless data processing and analysis. This project is a capstone for the fulfilment of the [data engineering zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp.git). This is my first data engineering project and I am happy to pick up these tools.
 
-![architecture](data_engineering_architecture.drawio.png)
+![architecture](data_engineering_architecture.new.svg)
 
 ## Table of Contents
 - [Background](#background)
